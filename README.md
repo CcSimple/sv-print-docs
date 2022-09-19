@@ -6,6 +6,6 @@ sv-print 是一个使用 Svelte 构建的打印设计器组件（[基于 hiprint
 
 > 感兴趣的小伙伴可以 fork 后编写贡献文档啦~
 
-[gitee 国内镜像文档](https://gitee.com/CcSimple/sv-print-docs)
+[gitee 国内镜像文档](https://ccsimple.gitee.io/sv-print-docs)
 
-[github 文档](https://gitee.com/CcSimple/sv-print-docs)
+[github 文档](https://ccsimple.github.io/sv-print-docs/)
