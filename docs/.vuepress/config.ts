@@ -3,7 +3,7 @@ import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
+  base: "/sv-print-docs/",
   port: 9981,
   locales: {
     "/": {
