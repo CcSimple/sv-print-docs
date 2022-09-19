@@ -5,7 +5,6 @@ import theme from "./theme.js";
 export default defineUserConfig({
   base: "/sv-print-docs/",
   port: 9981,
-  dest: `dist`,
   locales: {
     "/": {
       lang: "zh-CN",
