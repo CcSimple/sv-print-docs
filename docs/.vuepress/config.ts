@@ -11,11 +11,11 @@ export default defineUserConfig({
       title: "sv-print",
       description: "使用svelte开发的打印设计器(基于hiprint)",
     },
-    "/en": {
-      lang: "en-US",
-      title: "sv-print",
-      description: "Print designer developed by svelte (based on hiprint)",
-    },
+    // "/en": {
+    //   lang: "en-US",
+    //   title: "sv-print",
+    //   description: "Print designer developed by svelte (based on hiprint)",
+    // },
   },
 
   theme,
@@ -67,14 +67,14 @@ export default defineUserConfig({
             },
           }
         },
-        "/en": {
-          placeholder: "Search Docs",
-          translations: {
-            button: {
-              buttonText: "Search Docs",
-            },
-          },
-        },
+        // "/en": {
+        //   placeholder: "Search Docs",
+        //   translations: {
+        //     button: {
+        //       buttonText: "Search Docs",
+        //     },
+        //   },
+        // },
       },
     }),
   ],

@@ -35,12 +35,12 @@ export default hopeTheme({
       footer: "sv-print",
       displayFooter: true,
     },
-    "/en": {
-      navbar: navbar.en,
-      sidebar: sidebar.en,
-      footer: "sv-print",
-      displayFooter: true,
-    },
+    // "/en": {
+    //   navbar: navbar.en,
+    //   sidebar: sidebar.en,
+    //   footer: "sv-print",
+    //   displayFooter: true,
+    // },
   },
   // 加密
   encrypt: {
