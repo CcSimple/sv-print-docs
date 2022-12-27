@@ -9,7 +9,7 @@ export default defineUserConfig({
     "/": {
       lang: "zh-CN",
       title: "sv-print",
-      description: "使用svelte开发的打印设计器(基于hiprint)",
+      description: "使用svelte开发的打印设计器组件(基于hiprint)",
     },
     // "/en": {
     //   lang: "en-US",
