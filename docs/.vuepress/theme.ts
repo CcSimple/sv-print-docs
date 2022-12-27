@@ -24,7 +24,7 @@ export default hopeTheme({
   // 左侧logo
   logo: "/logo.svg",
   // github 仓库
-  repo: "CcSimple/vue-plugin-hiprint",
+  repo: "CcSimple/sv-print-docs",
   // 布局 https://vuepress-theme-hope.github.io/v2/zh/config/frontmatter/layout.html#pageinfo
   pageInfo: ["Author", "Date", "Category", "Tag", "ReadingTime"],
   // 多语言
