@@ -22,8 +22,8 @@ export default defineUserConfig({
 
   plugins: [
     docsearchPlugin({
-      appId: "",
-      apiKey: "",
+      appId: "EIXB0LBL2Z",
+      apiKey: "5a6a309b17daf36159eb597307910eda",
       indexName: "sv-print",
       locales: {
         "/": {
