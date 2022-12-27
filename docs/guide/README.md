@@ -2,7 +2,7 @@
 title: 快速上手
 icon: creative
 category:
-  - 快速上手
+  - 使用指南
 ---
 
 ### 安装
