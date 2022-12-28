@@ -46,10 +46,17 @@ jobs:
           branch: gh-pages
           folder: docs/.vuepress/dist
 
-      - name: 同步
+      - name: gitee同步
         uses: wearerequired/git-mirror-action@master
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_KEY }}
         with:
           source-repo: git@github.com:CcSimple/sv-print-docs.git
           destination-repo: git@gitee.com:CcSimple/sv-print-docs.git
+
+      - name: giteePages
+        uses: yanglbme/gitee-pages-action@master
+        with:
+          gitee-username: CcSimple
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: CcSimple/sv-print-docs
