@@ -60,3 +60,4 @@ jobs:
           gitee-username: CcSimple
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           gitee-repo: CcSimple/sv-print-docs
+          branch: gh-pages
