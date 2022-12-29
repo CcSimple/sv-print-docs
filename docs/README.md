@@ -7,12 +7,14 @@ heroText: sv-print
 tagline: 使用svelte开发的打印设计器组件(基于hiprint)
 actions:
   - text: 使用指南 💡
+    link: /guide/intro
+
+  - text: 快速上手 🚀
     link: /guide/
     type: primary
 
   - text: 在线案例 🎾
     link: https://ccsimple.gitee.io/sv-print-demo/
-    type: primary
 
 features:
   - title: 多框架UI 组件
