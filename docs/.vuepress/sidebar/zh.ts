@@ -15,6 +15,11 @@ export const zh = sidebar({
           prefix: "guide/",
           link: "guide/",
         },
+        {
+          text: "优化概览",
+          prefix: "guide/",
+          link: "guide/overview",
+        },
       ],
     },
     // {
