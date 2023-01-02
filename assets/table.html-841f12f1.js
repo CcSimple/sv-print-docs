@@ -1,0 +1,1 @@
+import{_ as e,W as t,X as c}from"./framework-741228ed.js";const _={};function r(a,n){return t(),c("div")}const l=e(_,[["render",r],["__file","table.html.vue"]]);export{l as default};
