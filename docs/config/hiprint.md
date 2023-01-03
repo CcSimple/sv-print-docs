@@ -116,7 +116,7 @@ hiprint.PrintElementTypeManager.build(".hiprintEpContainer2", "defaultModule"); 
 | print                   | `多模板`浏览器打印              |                                         |
 | print2                  | `多模板`直接打印                |                                         |
 | getHtml                 | `多模板`预览                    |                                         |
-| hiwebSocket             | `socke.io` 对象                 | 直接打印、切换 直接 "打印客户端" 主机等 |
+| hiwebSocket             | `socket.io` 对象                | 直接打印、切换 直接 "打印客户端" 主机等 |
 | refreshPrinterList      | 刷新获取打印机列表              |                                         |
 | getAddress              | 获取 `MAC`、`IP` 地址等         | ==需要已连接 "直接打印客户端"==         |
 | ippPrint                | `ipp`打印 <br/>==不稳定==       | ==需要已连接 "直接打印客户端"==         |
