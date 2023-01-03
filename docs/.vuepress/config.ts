@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -21,6 +22,9 @@ export default defineUserConfig({
   theme,
 
   plugins: [
+    sitemapPlugin({
+      hostname: "https://ccsimple.github.io/sv-print-docs/"
+    }),
     docsearchPlugin({
       appId: "EIXB0LBL2Z",
       apiKey: "5a6a309b17daf36159eb597307910eda",
