@@ -73,6 +73,7 @@ export default {
   },
   mounted() {
     // 渲染部分都是填充到 对应 "容器" 中， 所以肯定需要能够获取到对应 DOM 后 操作。
+    this.init();
   },
   methods: {
     init() {
@@ -87,7 +88,7 @@ export default {
       // hiprintEpContainer => "可拖拽元素" 容器
       // defaultModule => provider 对应的 ElementTypes --> context.addPrintElementTypes("defaultModule",[])
       // 有时如果你发现你页面出现重复的 "可拖拽元素" 元素, 那么你需要 先移除"旧"的 ElementTypes --> context.removePrintElementTypes("defaultModule");
-      hiprint.PrintElementTypeManager.build('.hiprintEpContainer', "defaultModule");
+      hiprint.PrintElementTypeManager.build('.hiprintEpContainer2', "defaultModule");
       // 有时可能是第二次进入此页面, 所以需要先清空 "拖拽设计器" 容器
       $("#hiprint-printTemplate").empty();
       // 创建模板对象
