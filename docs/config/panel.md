@@ -31,6 +31,8 @@ let panel = hiprintTemplate.addPrintPanel({ width: 100, height: 100 });
 | paperFooter         | `number`  | 页脚线 `mm` 默认 纸张底部                                               | 此高度之==下==的元素, 可设置每页显示 <br/> ==分页内容结束位置==                                            |
 | paperNumberDisabled | `boolean` | 不显示页码 默认 false                                                   | 设计时显示`灰色`, 双击页码则切换状态                                                                       |
 | paperNumberFormat   | `string`  | 页码格式 默认 `paperNo-paperCount`                                      |                                                                                                            |
+| fontFamily          | `string`  | 字体                                                                    | ==如果"元素"没设置则继承这个字体==                                                                         |
+| orient              | `string`  | 纸张方向(仅自定义纸张有效) <br/> `1:纵向 2:横向`                                       | ==默认自带有 A1-A8 B1-B8==                                                                                 |
 | panelPaperRule      | `string`  | 面板打印纸张规则<br/>`odd`:打印纸张保持奇数<br/>`even`:打印纸张保持偶数 |                                                                                                            |
 | firstPaperFooter    | `number`  | 首页页尾线位置                                                          | 顾名思义<br/>第一页的==页尾线高度==                                                                        |
 | lastPaperFooter     | `number`  | 尾页页尾线位置                                                          | 顾名思义<br/>最后一页的==页尾线高度==                                                                      |
