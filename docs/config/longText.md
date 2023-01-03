@@ -17,7 +17,7 @@ category:
 | tid        | `string`   | 元素类型唯一标识                                              |                                           |
 | title      | `string`   | 标题 <br/>`同 options 的 title`                               | `拖拽时就显示`<br/>==无法彻底删除==       |
 | field      | `string`   | 字段名称 <br/>`同 options 的 field`                           | `优先级高于 options`<br/>==无法彻底删除== |
-| data       | `string`   | 同==测试数据== <br/>`同 options 的 data` ==需要先设置 field== | `优先级高于 options`<br/>==无法彻底删除== |
+| data       | `string`   | 同==测试数据== <br/>`同 options 的 testData` ==需要先设置 field== | `优先级高于 options`<br/>==无法彻底删除== |
 | formatter  | `function` | 格式化函数 <br/>`同 options 的 formatter`                     | `优先级高于 options`<br/>==无法彻底删除== |
 | styler     | `function` | 样式函数 <br/>`同 options 的 styler`                          | `优先级高于 options`<br/>==无法彻底删除== |
 | onRendered | `function` | 渲染完成回调 <br/>==只能放在 printElementType 中==            | ==设计时不会触发==                        |
