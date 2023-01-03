@@ -32,7 +32,7 @@ let panel = hiprintTemplate.addPrintPanel({ width: 100, height: 100 });
 | paperNumberDisabled | `boolean` | 不显示页码 默认 false                                                   | 设计时显示`灰色`, 双击页码则切换状态                                                                       |
 | paperNumberFormat   | `string`  | 页码格式 默认 `paperNo-paperCount`                                      |                                                                                                            |
 | panelPaperRule      | `string`  | 面板打印纸张规则<br/>`odd`:打印纸张保持奇数<br/>`even`:打印纸张保持偶数 |                                                                                                            |
-| firstPaperFooter    | `number`  | 首页页尾线位置                                                          |                                                                                                            |
-| lastPaperFooter     | `number`  | 尾页页尾线位置                                                          |                                                                                                            |
-| evenPaperFooter     | `number`  | 偶数页页尾线位置                                                        |                                                                                                            |
-| oddPaperFooter      | `number`  | 奇数页页尾线位置                                                        |                                                                                                            |
+| firstPaperFooter    | `number`  | 首页页尾线位置                                                          | 顾名思义<br/>第一页的==页尾线高度==                                                                        |
+| lastPaperFooter     | `number`  | 尾页页尾线位置                                                          | 顾名思义<br/>最后一页的==页尾线高度==                                                                      |
+| evenPaperFooter     | `number`  | 偶数页页尾线位置                                                        | 顾名思义<br/>偶数页的==页尾线高度==                                                                        |
+| oddPaperFooter      | `number`  | 奇数页页尾线位置                                                        | 顾名思义<br/>奇数页的==页尾线高度==                                                                        |
