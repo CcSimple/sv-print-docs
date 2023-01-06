@@ -55,3 +55,163 @@ features:
 copyright: false
 footer: LGPL Licensed | Copyright © 2022-present sv-print
 ---
+
+## 🛠 安装
+
+::: code-tabs
+
+@tab pnpm
+
+```bash
+# Svelte/Vanilla JS 组件
+pnpm add sv-print
+# React 组件
+pnpm add @sv-print/react
+# Vue2 组件
+pnpm add @sv-print/Vue
+# Vue3 组件
+pnpm add @sv-print/Vue3
+```
+
+@tab yarn
+
+```bash
+# Svelte/Vanilla JS 组件
+yarn add sv-print
+# React 组件
+yarn add @sv-print/react
+# Vue2 组件
+yarn add @sv-print/Vue
+# Vue3 组件
+yarn add @sv-print/Vue3
+```
+
+@tab:active npm
+
+```bash
+# Svelte/Vanilla JS 组件
+npm i sv-print
+# React 组件
+npm i @sv-print/react
+# Vue2 组件
+npm i @sv-print/Vue
+# Vue3 组件
+npm i @sv-print/Vue3
+```
+
+:::
+
+::: danger 重要提醒
+
+需要复制【==node_modules/@sv-print/hiprint/dist/print-lock.css==】到开发资源目录。<br/>
+例如: Vue 项目的 ==public== 目录。<br/>
+假如你部署的网站是: `https://www.abcd.com/index.html` 那么确保 `https://www.abcd.com/print-lock.css` 能够正常访问
+
+:::
+
+## 🚀 使用
+
+::: code-tabs
+
+@tab Svelte
+
+```vue
+<script>
+import "sv-print/dist/style.css"; // 一般在入口文件(index/main)添加
+import { Designer } from "sv-print";
+let template = {};
+
+function onDesigned(e) {
+  const { hiprint, printTemplate, designerUtils } = e.detail;
+  console.log(hiprint);
+  console.log(printTemplate);
+  console.log(designerUtils);
+}
+</script>
+
+<template>
+  <Designer {template} on:onDesigned="{onDesigned}"> </Designer>
+</template>
+```
+
+@tab:active Vue
+
+```vue
+<template>
+  <Designer :template="template" @onDesigned="onDesigned" />
+</template>
+
+<script>
+import "sv-print/dist/style.css"; // 一般在入口文件(index/main)添加
+import { Designer } from "@sv-print/vue";
+
+export default {
+  components: { Designer },
+  data() {
+    return { template: {} };
+  },
+  methods: {
+    onDesigned(e) {
+      console.log(e);
+    },
+  },
+};
+</script>
+```
+
+@tab:active Vue3
+
+```vue
+<template>
+  <Designer :template="template" @onDesigned="onDesigned" />
+</template>
+
+<script setup lang="ts">
+import { onMounted, ref } from "vue";
+import "sv-print/dist/style.css"; // 一般在入口文件(index/main)添加
+import { Designer } from "@sv-print/vue3";
+let template = ref({});
+const onDesigned = (e) => {
+  console.log("onDesigned");
+  console.log(e);
+};
+</script>
+```
+
+@tab React
+
+```js
+import "sv-print/dist/style.css"; // 一般在入口文件(index/main)添加
+import { Designer } from "@sv-print/react";
+
+const App = () => {
+  const [template, setTemplate] = useState({});
+
+  return (
+    <Designer
+      template={template}
+      onDesigned={(e) => {
+        console.log(e);
+      }}
+    />
+  );
+};
+```
+
+@tab Vanilla JS
+
+```js
+import "sv-print/dist/style.css";
+import { Designer } from "sv-print";
+
+const designer = new Designer({
+  target: document.body, // 容器
+  props: {
+    template: {},
+  },
+});
+
+designer.$on("onDesigned", (e) => {
+  console.log(e);
+});
+```

@@ -72,6 +72,14 @@ npm i @sv-print/Vue3
 
 :::
 
+::: danger 重要提醒
+
+需要复制【==node_modules/@sv-print/hiprint/dist/print-lock.css==】到开发资源目录。<br/>
+例如: Vue 项目的 ==public== 目录。<br/>
+假如你部署的网站是: `https://www.abcd.com/index.html` 那么确保 `https://www.abcd.com/print-lock.css` 能够正常访问
+
+:::
+
 ### 使用
 
 ::: code-tabs
