@@ -215,3 +215,22 @@ designer.$on("onDesigned", (e) => {
   console.log(e);
 });
 ```
+
+:::
+
+## ☕️ 请我喝杯咖啡
+
+::: tip
+
+- 项目由个人开发，为爱发电，感谢各位的支持。
+
+:::
+
+<table>
+    <tr>
+        <td><img src="/assets/zWechat.png" style="width:14rem"/></td>
+        <td><img src="/assets/zAlipay.png" style="width:14rem"/></td>
+        <td>扫一扫右侧微信二维码<br/>寻求帮助 或进 微信群</td>
+        <td><img src="/assets/wechat.png" style="width:14rem"/></td>
+    </tr>
+</table>
