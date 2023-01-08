@@ -94,6 +94,17 @@ export const zh = sidebar({
         },
       ],
     },
+    {
+      text: "插件",
+      collapsible: true,
+      children: [
+        {
+          text: "介绍",
+          prefix: "plugin/",
+          link: "plugin/intro",
+        },
+      ],
+    },
     // {
     //   text: "快速上手",
     //   // collapsable: false, // 折叠
