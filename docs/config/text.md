@@ -29,15 +29,15 @@ panel.addPrintText({ options: { width: 100, height: 100, top: 80, left: 20, titl
 
 :::
 
-| 名称       | 类型       | 说明                                                                            | 备注                                      |
-| ---------- | ---------- | ------------------------------------------------------------------------------- | ----------------------------------------- |
-| tid        | `string`   | 元素类型唯一标识                                                                |                                           |
-| title      | `string`   | 标题或内容 <br/>`同 options 的 title`                                           | `拖拽时就显示`<br/>==无法彻底删除==       |
-| field      | `string`   | 字段名称 <br/>`同 options 的 field`                                             | `优先级高于 options`<br/>==无法彻底删除== |
+| 名称       | 类型       | 说明                                                                                | 备注                                      |
+| ---------- | ---------- | ----------------------------------------------------------------------------------- | ----------------------------------------- |
+| tid        | `string`   | 元素类型唯一标识                                                                    |                                           |
+| title      | `string`   | 标题或内容 <br/>`同 options 的 title`                                               | `拖拽时就显示`<br/>==无法彻底删除==       |
+| field      | `string`   | 字段名称 <br/>`同 options 的 field`                                                 | `优先级高于 options`<br/>==无法彻底删除== |
 | data       | `string`   | 同==测试数据==但参数列表不会显示 <br/>`同 options 的 testData` ==需要先设置 field== | `优先级高于 options`<br/>==无法彻底删除== |
-| formatter  | `function` | 格式化函数 <br/>`同 options 的 formatter`                                       | `优先级高于 options`<br/>==无法彻底删除== |
-| styler     | `function` | 样式函数 <br/>`同 options 的 styler`                                            | `优先级高于 options`<br/>==无法彻底删除== |
-| onRendered | `function` | 渲染完成回调 <br/>==只能放在 printElementType 中==                              | ==设计时不会触发==                        |
+| formatter  | `function` | 格式化函数 <br/>`同 options 的 formatter`                                           | `优先级高于 options`<br/>==无法彻底删除== |
+| styler     | `function` | 样式函数 <br/>`同 options 的 styler`                                                | `优先级高于 options`<br/>==无法彻底删除== |
+| onRendered | `function` | 渲染完成回调 <br/>==只能放在 printElementType 中==                                  | ==设计时不会触发==                        |
 
 ### options
 
@@ -51,8 +51,8 @@ panel.addPrintText({ options: { width: 100, height: 100, top: 80, left: 20, titl
 | -------------- | --------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | title          | `string`  | 标题或内容<br/>`field 存在：title为标题，打印结果为 title:data , field 不存在：title为内容，打印结果为 title` | `拖拽进设计器时显示`<br/>                                                                                                        |
 | field          | `string`  | 字段名称                                                                                                      | 可配置==fields==让字段名变成下列选择                                                                                             |
-| testData       | `string`  | 测试数据 ==需要先设置 field==                                                                                 | ==仅拖拽设计时有效==                                                                                                                                 |
-| hideTitle      | `boolean` | 隐藏标题 field==                                                                                              |                                                                                                                                  |
+| testData       | `string`  | 测试数据 ==需要先设置 field==                                                                                 | ==仅拖拽设计时有效==                                                                                                             |
+| hideTitle      | `boolean` | 隐藏标题                                                                                                      |                                                                                                                                  |
 | fontFamily     | `string`  | 字体 `默认可继承面板设置的字体`                                                                               | 默认`宋体`                                                                                                                       |
 | fontSize       | `string`  | 字体大小                                                                                                      | 默认`9pt`                                                                                                                        |
 | fontWeight     | `string`  | 字体粗细                                                                                                      | 默认`9pt`                                                                                                                        |
