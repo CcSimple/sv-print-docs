@@ -68,9 +68,9 @@ pnpm add sv-print
 # React 组件
 pnpm add @sv-print/react
 # Vue2 组件
-pnpm add @sv-print/Vue
+pnpm add @sv-print/vue
 # Vue3 组件
-pnpm add @sv-print/Vue3
+pnpm add @sv-print/vue3
 ```
 
 @tab yarn
@@ -81,9 +81,9 @@ yarn add sv-print
 # React 组件
 yarn add @sv-print/react
 # Vue2 组件
-yarn add @sv-print/Vue
+yarn add @sv-print/vue
 # Vue3 组件
-yarn add @sv-print/Vue3
+yarn add @sv-print/vue3
 ```
 
 @tab:active npm
@@ -94,9 +94,9 @@ npm i sv-print
 # React 组件
 npm i @sv-print/react
 # Vue2 组件
-npm i @sv-print/Vue
+npm i @sv-print/vue
 # Vue3 组件
-npm i @sv-print/Vue3
+npm i @sv-print/vue3
 ```
 
 :::
