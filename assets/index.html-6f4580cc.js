@@ -3,25 +3,25 @@ import{_ as i,a as u,b as r}from"./wechat-386fcced.js";import{_ as k,W as d,X as
 `),n("span",{class:"token comment"},"# React 组件"),s(`
 `),n("span",{class:"token function"},"pnpm"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/react
 `),n("span",{class:"token comment"},"# Vue2 组件"),s(`
-`),n("span",{class:"token function"},"pnpm"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/Vue
+`),n("span",{class:"token function"},"pnpm"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/vue
 `),n("span",{class:"token comment"},"# Vue3 组件"),s(`
-`),n("span",{class:"token function"},"pnpm"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/Vue3
+`),n("span",{class:"token function"},"pnpm"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/vue3
 `)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),h=n("div",{class:"language-bash line-numbers-mode","data-ext":"sh"},[n("pre",{class:"language-bash"},[n("code",null,[n("span",{class:"token comment"},"# Svelte/Vanilla JS 组件"),s(`
 `),n("span",{class:"token function"},"yarn"),s(),n("span",{class:"token function"},"add"),s(` sv-print
 `),n("span",{class:"token comment"},"# React 组件"),s(`
 `),n("span",{class:"token function"},"yarn"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/react
 `),n("span",{class:"token comment"},"# Vue2 组件"),s(`
-`),n("span",{class:"token function"},"yarn"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/Vue
+`),n("span",{class:"token function"},"yarn"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/vue
 `),n("span",{class:"token comment"},"# Vue3 组件"),s(`
-`),n("span",{class:"token function"},"yarn"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/Vue3
+`),n("span",{class:"token function"},"yarn"),s(),n("span",{class:"token function"},"add"),s(` @sv-print/vue3
 `)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),y=n("div",{class:"language-bash line-numbers-mode","data-ext":"sh"},[n("pre",{class:"language-bash"},[n("code",null,[n("span",{class:"token comment"},"# Svelte/Vanilla JS 组件"),s(`
 `),n("span",{class:"token function"},"npm"),s(` i sv-print
 `),n("span",{class:"token comment"},"# React 组件"),s(`
 `),n("span",{class:"token function"},"npm"),s(` i @sv-print/react
 `),n("span",{class:"token comment"},"# Vue2 组件"),s(`
-`),n("span",{class:"token function"},"npm"),s(` i @sv-print/Vue
+`),n("span",{class:"token function"},"npm"),s(` i @sv-print/vue
 `),n("span",{class:"token comment"},"# Vue3 组件"),s(`
-`),n("span",{class:"token function"},"npm"),s(` i @sv-print/Vue3
+`),n("span",{class:"token function"},"npm"),s(` i @sv-print/vue3
 `)])]),n("div",{class:"line-numbers","aria-hidden":"true"},[n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"}),n("div",{class:"line-number"})])],-1),_=p('<div class="custom-container danger"><p class="custom-container-title">重要提醒</p><p>需要复制【<mark>node_modules/@sv-print/hiprint/dist/print-lock.css</mark>】到开发资源目录。<br> 例如: Vue 项目的 <mark>public</mark> 目录。<br> 假如你部署的网站是: <code>https://www.abcd.com/index.html</code> 那么确保 <code>https://www.abcd.com/print-lock.css</code> 能够正常访问</p></div><h2 id="🚀-使用" tabindex="-1"><a class="header-anchor" href="#🚀-使用" aria-hidden="true">#</a> 🚀 使用</h2>',2),w=n("div",{class:"language-vue line-numbers-mode","data-ext":"vue"},[n("pre",{class:"language-vue"},[n("code",null,[n("span",{class:"token tag"},[n("span",{class:"token tag"},[n("span",{class:"token punctuation"},"<"),s("script")]),n("span",{class:"token punctuation"},">")]),n("span",{class:"token script"},[n("span",{class:"token language-javascript"},[s(`
 `),n("span",{class:"token keyword"},"import"),s(),n("span",{class:"token string"},'"sv-print/dist/style.css"'),n("span",{class:"token punctuation"},";"),s(),n("span",{class:"token comment"},"// 一般在入口文件(index/main)添加"),s(`
 `),n("span",{class:"token keyword"},"import"),s(),n("span",{class:"token punctuation"},"{"),s(" Designer "),n("span",{class:"token punctuation"},"}"),s(),n("span",{class:"token keyword"},"from"),s(),n("span",{class:"token string"},'"sv-print"'),n("span",{class:"token punctuation"},";"),s(`
