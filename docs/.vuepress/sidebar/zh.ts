@@ -105,6 +105,17 @@ export const zh = sidebar({
         },
       ],
     },
+    {
+      text: "sv-print",
+      collapsible: true,
+      children: [
+        {
+          text: "开始",
+          prefix: "sv-print/",
+          link: "sv-print/start",
+        },
+      ],
+    },
     // {
     //   text: "快速上手",
     //   // collapsable: false, // 折叠
