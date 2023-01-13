@@ -114,6 +114,11 @@ export const zh = sidebar({
           prefix: "sv-print/",
           link: "sv-print/start",
         },
+        {
+          text: "参数&回调",
+          prefix: "sv-print/",
+          link: "sv-print/options",
+        },
       ],
     },
     // {
