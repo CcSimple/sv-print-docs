@@ -12,6 +12,12 @@ category:
 
 ### 安装
 
+@include(../guide/README.md{16-19})
+
+@include(../guide/README.md{22-31})
+
+==请选择你需要的版本==
+
 ```
 npm i @sv-print/vue
 ```
