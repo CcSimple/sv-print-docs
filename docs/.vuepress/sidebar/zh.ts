@@ -100,17 +100,6 @@ export const zh = sidebar({
       ],
     },
     {
-      text: "插件",
-      collapsible: true,
-      children: [
-        {
-          text: "介绍",
-          prefix: "plugin/",
-          link: "plugin/intro",
-        },
-      ],
-    },
-    {
       text: "sv-print",
       collapsible: true,
       children: [
@@ -123,6 +112,17 @@ export const zh = sidebar({
           text: "参数&回调",
           prefix: "sv-print/",
           link: "sv-print/options",
+        },
+      ],
+    },
+    {
+      text: "插件",
+      collapsible: true,
+      children: [
+        {
+          text: "介绍",
+          prefix: "plugin/",
+          link: "plugin/intro",
         },
       ],
     },
