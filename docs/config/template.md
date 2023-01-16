@@ -84,8 +84,8 @@ export default {
       // 渲染 "可拖拽元素" 方式1, 包含 "tid" 元素 class 必须包含 "ep-draggable-item"
       hiprint.PrintElementTypeManager.buildByHtml($(".ep-draggable-item"));
       // 渲染 "可拖拽元素" 方式2, 指定 "可拖拽元素" 容器
-      $('.hiprintEpContainer').empty() // // 有时可能是第二次进入此页面, 所以需要先清空 "可拖拽元素" 容器
-      // hiprintEpContainer => "可拖拽元素" 容器
+      $('.hiprintEpContainer2').empty() // // 有时可能是第二次进入此页面, 所以需要先清空 "可拖拽元素" 容器
+      // hiprintEpContainer2 => "可拖拽元素" 容器
       // defaultModule => provider 对应的 ElementTypes --> context.addPrintElementTypes("defaultModule",[])
       // 有时如果你发现你页面出现重复的 "可拖拽元素" 元素, 那么你需要 先移除"旧"的 ElementTypes --> context.removePrintElementTypes("defaultModule");
       hiprint.PrintElementTypeManager.build('.hiprintEpContainer2', "defaultModule");
