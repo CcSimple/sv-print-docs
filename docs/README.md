@@ -4,7 +4,7 @@ icon: home
 title: sv-print
 heroImage: /logo.svg
 heroText: sv-print
-tagline: 使用svelte开发的打印设计器组件(基于hiprint)
+tagline: 使用svelte开发的打印设计器组件(基于hiprint)；本文档会有 hiprint 和 sv-print 的使用说明。
 actions:
   - text: 使用指南 💡
     link: /guide/intro
