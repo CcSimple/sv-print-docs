@@ -28,6 +28,11 @@ export const zh = sidebar({
       collapsible: true,
       children: [
         {
+          text: "开始",
+          prefix: "config/",
+          link: "config/start",
+        },
+        {
           text: "hiprint",
           prefix: "config/",
           link: "config/hiprint",
