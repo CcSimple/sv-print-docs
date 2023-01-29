@@ -24,7 +24,7 @@ export const zh = sidebar({
       ],
     },
     {
-      text: "模板&元素",
+      text: "hiprint&模板&元素",
       collapsible: true,
       children: [
         {
