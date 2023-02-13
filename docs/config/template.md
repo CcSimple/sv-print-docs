@@ -21,10 +21,21 @@ let printData = { text: "这是打印时显示的文本" };
 hiprintTemplate.getHtml(printData);
 // 浏览器打印 --> 需要用户 手动 点击打印按钮 !!! “无法监听“ 用户是否点了打印
 hiprintTemplate.print(printData);
+// 浏览器批量打印 --> 生成的 html 页面越多 越容易造成浏览器卡死
+// 打印3份
+hiprintTemplate.print([printData1 printData2, printData3]);
+
 // 直接打印 --> 有回调是否将“打印任务” “发生成功” 给打印机
 hiprintTemplate.print2(printData, { printer: "打印机名称", title: "打印任务名称" });
+// 直接批量打印 --> 同 print 批量打印 页面越多 越容易造成浏览器卡死
+// 直接打印3份
+hiprintTemplate.print2([printData1 printData2, printData3]);
+
 // 导出PDF
 hiprintTemplate.toPdf(printData, "pdf名称");
+// 批量导出PDF --> 同 print 批量打印 页面越多 越容易造成浏览器卡死
+// 导出3份
+hiprintTemplate.toPdf([printData1 printData2, printData3], "pdf名称");
 ```
 
 ### 自定义设计使用示例
@@ -145,7 +156,7 @@ export default {
 | updateOption   | `key,value`             | 设置多选元素的 字体大小 12 <br/> `updateOption('fontSize',12)` <br/> 字体加粗 <br/> `updateOption('fontWeight', 'bolder');`                                                                                                                                        | `无`                      | 支持的参数在控制台输入 `window.HIPRINT_CONFIG` 查看 <br/> 如: `window.HIPRINT_CONFIG.text.tabs[0].options`  |
 | getHtml        | `data,options,callback` | 获取打印 html <br/> `getHtml({})` <br/> 批量获取打印 html <br/> `getHtml([{},{}])` <br/> 定义打印左上偏移量 <br/> `getHtml(data,{leftOffset:-1,topOffset:-1 })`==将覆盖面板偏移设置== <br/>                                                                        | `html`                    | `paperNumberToggleInEven`<br/><br/>`leftOffset`<br/><br/>`topOffset`                                        |
 | print          | `data,options`          | 浏览器打印<br/> `print({})`<br/>批量打印 <br/> `print([{},{},{},{}])`<br/> 定义打印左上偏移量 <br/> `print({},{leftOffset:-1,topOffset:-1 })`==将覆盖面板偏移设置== <br/> 浏览器打印回调 <br/> `print({},{},{callback:()=>{console.log('浏览器打印窗口已打开')}})` | `无`                      | `paperNumberToggleInEven`<br/><br/>`leftOffset`<br/><br/>`topOffset`                                        |
-| print2         | `data,options`          | 浏览器打印<br/> `print2({})`<br/>批量打印 <br/> `print2([{},{},{},{}])`<br/> 定义打印左上偏移量 <br/> `print2({},{leftOffset:-1,topOffset:-1 })`==将覆盖面板偏移设置== <br/>                                                                                       | `无`                      | `paperNumberToggleInEven`<br/><br/>`leftOffset`<br/><br/>`topOffset`                                        |
+| print2         | `data,options`          | 直接打印<br/> `print2({})`<br/>批量打印 <br/> `print2([{},{},{},{}])`<br/> 定义打印左上偏移量 <br/> `print2({},{leftOffset:-1,topOffset:-1 })`==将覆盖面板偏移设置== <br/>                                                                                       | `无`                      | `paperNumberToggleInEven`<br/><br/>`leftOffset`<br/><br/>`topOffset`                                        |
 | on             | `eventName,callback`    | ==直接打印==回调<br/>打印成功<br/>`on('printSuccess', function (data) { })` <br/>打印失败<br/>`on('printError', function (data) { })`                                                                                                                              | `无`                      |                                                                                                             |
 | toPdf          | `data,fileName,options` | 导出 pdf <br/> `toPdf({},"测试导出")`<br/>导出参数==scale 越大 pdf 越清晰，文件越大 性能越差 默认 2==<br/>`toPdf({},"测试导出",{scale:4})`<br/> 定义打印左上偏移量 <br/> `print({},{leftOffset:-1,topOffset:-1 })`==将覆盖面板偏移设置== <br/>                     | `$.Deferred()`            | `scale`<br/><br/>`isDownload`                                                                               |
 | getPrinterList | `无`                    | 返回 连接 ==打印客户端== 时获取到的打印机列表                                                                                                                                                                                                                      | `array`                   | 刷新获取打印机列表<br/>==这是异步的,需要已连接打印客户端== <br/> `hiprint.refreshPrinterList((list) => {})` |
