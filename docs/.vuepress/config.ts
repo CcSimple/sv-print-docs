@@ -26,8 +26,8 @@ export default defineUserConfig({
       hostname: "https://ccsimple.github.io/sv-print-docs/"
     }),
     docsearchPlugin({
-      appId: "EIXB0LBL2Z",
-      apiKey: "5a6a309b17daf36159eb597307910eda",
+      appId: "EK98MFQYBD",
+      apiKey: "591323234172ec0d4b26c7e21754c7e9",
       indexName: "sv-print",
       locales: {
         "/": {
