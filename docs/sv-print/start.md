@@ -12,7 +12,7 @@ category:
 
 ### 安装
 
-@include(../guide/README.md{16-19})
+@include(../guide/README.md{16-20})
 
 @include(../guide/README.md{22-31})
 

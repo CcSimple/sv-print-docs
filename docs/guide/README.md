@@ -14,8 +14,9 @@ sv-print 目前仍处于测试阶段。你可以引入到现有项目，但是�
 ### 依赖环境
 
 - [Node.js v16+](https://nodejs.org/en/)(开发环境是 16.18.1)
-- [Vite v3+](https://cn.vitejs.dev/)
-- [Webpack v5+](https://www.webpackjs.com/)(使用 vue create 创建的项目测试可正常引入)
+- [Vite v3+](https://cn.vitejs.dev/)(开发环境是 ^3.2.5)
+- [Webpack v4+](https://www.webpackjs.com/)(使用 vue create 创建的项目测试可正常引入)
+- [jQuery/纯js 项目支持](https://jquery.com/)(使用 html + js 项目测试可正常引入 (需要demo 联系我))
 
 ### 安装
 
