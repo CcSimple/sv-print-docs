@@ -23,6 +23,7 @@ let panel = hiprintTemplate.addPrintPanel({ width: 100, height: 100 });
 | 名称                | 类型      | 说明                                                                    | 备注                                                                                                       |
 | ------------------- | --------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | panelPageRule       | `string`  | 分页规则 默认 `''`                                                      | 设置 `none` 不分页 ==小票打印==                                                                            |
+| name                | `string`  | 面板名称 `默认面板名称`                                                 | ==多面板==时显示                                                                                           |
 | width               | `number`  | 打印纸张宽度 `mm`                                                       |                                                                                                            |
 | height              | `number`  | 打印纸张高度 `mm`                                                       |                                                                                                            |
 | leftOffset          | `number`  | 打印左偏移量 `mm` <br/> ==当打印遇到部分显示不全很有用==                | 将覆盖面板的左偏移<br/>`template.print(data,{leftOffset:-1})`<br/>`template.getHtml(data,{leftOffset:-1})` |
@@ -32,7 +33,7 @@ let panel = hiprintTemplate.addPrintPanel({ width: 100, height: 100 });
 | paperNumberDisabled | `boolean` | 不显示页码 默认 false                                                   | 设计时显示`灰色`, 双击页码则切换状态                                                                       |
 | paperNumberFormat   | `string`  | 页码格式 默认 `paperNo-paperCount`                                      |                                                                                                            |
 | fontFamily          | `string`  | 字体                                                                    | ==如果"元素"没设置则继承这个字体==                                                                         |
-| orient              | `string`  | 纸张方向(仅自定义纸张有效) <br/> `1:纵向 2:横向`                                       | ==默认自带有 A1-A8 B1-B8==                                                                                 |
+| orient              | `string`  | 纸张方向(仅自定义纸张有效) <br/> `1:纵向 2:横向`                        | ==默认自带有 A1-A8 B1-B8==                                                                                 |
 | panelPaperRule      | `string`  | 面板打印纸张规则<br/>`odd`:打印纸张保持奇数<br/>`even`:打印纸张保持偶数 |                                                                                                            |
 | firstPaperFooter    | `number`  | 首页页尾线位置                                                          | 顾名思义<br/>第一页的==页尾线高度==                                                                        |
 | lastPaperFooter     | `number`  | 尾页页尾线位置                                                          | 顾名思义<br/>最后一页的==页尾线高度==                                                                      |
