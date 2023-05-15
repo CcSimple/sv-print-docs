@@ -58,22 +58,28 @@ sv-print 目前仍处于测试阶段。它的配置和 API 还不够稳定。些
   draggableEls: { // 可拖拽元素
     mode: "default", // 拖拽模式: default(默认), top(上), bottom(下), left(左), right(右), fixed(固定)
     show: true, // 是否显示  默认: true
-    html: '<i class="iconfont sv-element"></i><span>拖拽元素</span>', // 缩放 左侧的 按钮/icon (一般不用)
+    html: '<i class="svicon sv-element"></i><span>拖拽元素</span>', // 缩放 左侧的 按钮/icon (一般不用)
     style: "left:20px;top:95px;width:200px;height:calc(100% - 340px);", // 样式
   },
   options: { // 属性
     mode: "default",
-    html: '<i class="iconfont sv-options"></i><span>属性</span>',
+    html: '<i class="svicon sv-options"></i><span>属性</span>',
     style: "right:0;top:95px;width:200px;",
   },
   pageStructure: { // 页面结构
     mode: "default",
-    html: '<i class="iconfont sv-structure"></i><span>页面结构</span>',
+    html: '<i class="svicon sv-structure"></i><span>页面结构</span>',
     style: "right:210px;top:95px;width:200px;",
+  },
+  locationExchange: { // 位置交换
+    mode: "default",
+    show: false,
+    html: '<i class="svicon sv-switch"></i><span>位置交换</span>',
+    style: "right:490px;top:95px;width:300px;height:400px",
   },
   miniMap: { // 小地图
     mode: "default",
-    html: '<i class="iconfont sv-flow"></i><span>概览图</span>',
+    html: '<i class="svicon sv-flow"></i><span>概览图</span>',
     style: "left:20px;bottom:30px;width:240px;min-height:200px;height:200px",
   },
   editableTools: { // 编辑工具
@@ -91,7 +97,11 @@ sv-print 目前仍处于测试阶段。它的配置和 API 还不够稳定。些
   zoomTools: { // 缩放工具
     mode: "left",
     style: "left:240px;top:100px;",
-  }
+  },
+  rotateTools: { // 旋转工具
+    mode: "bottom",
+    style: "left:440px;top:180px;",
+  },
 }
 // showOption
 // 这个目前 有bug, 高度显示不正常, 有时间再修复
