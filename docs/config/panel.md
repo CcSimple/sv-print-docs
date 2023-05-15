@@ -39,3 +39,4 @@ let panel = hiprintTemplate.addPrintPanel({ width: 100, height: 100 });
 | lastPaperFooter     | `number`  | 尾页页尾线位置                                                          | 顾名思义<br/>最后一页的==页尾线高度==                                                                      |
 | evenPaperFooter     | `number`  | 偶数页页尾线位置                                                        | 顾名思义<br/>偶数页的==页尾线高度==                                                                        |
 | oddPaperFooter      | `number`  | 奇数页页尾线位置                                                        | 顾名思义<br/>奇数页的==页尾线高度==                                                                        |
+| watermarkOptions    | `object`  | 水印参数                                                                | ==点击面板==可查看可配置项                                                                                   |
