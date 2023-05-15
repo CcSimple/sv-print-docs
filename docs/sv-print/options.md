@@ -4,9 +4,9 @@ category:
   - sv-print
 ---
 
-::: warning 注意
+::: warning 温馨提示
 
-sv-print 目前仍处于测试阶段。它的配置和 API 还不够稳定。些许 Bug 可能还未发现或未处理。
+sv-print 它的配置和 API 还不够稳定。些许 Bug 可能还未发现或未处理。
 
 :::
 
