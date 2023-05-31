@@ -47,9 +47,10 @@ category:
 | colspan               | `number`   | 列合并 <br/>`同 html table td`                                                                                         |                                                                     |
 | align                 | `string`   | 左右对齐方式 <br/>`left、right、center`                                                                                |                                                                     |
 | halign                | `string`   | ==表头==左右对齐方式 <br/>`left、right、center`                                                                        |                                                                     |
-| formatter             | `function` | 单元格的格式化函数<br/>`value：字段的值`<br/>`row：行的记录数据`<br/>`index：行的索引`<br/>`options：打印元素的选项值` | 返回==文本/html==                                                   |
+| formatter2            | `function` | 单元格的格式化函数<br/>`value：字段的值`<br/>`row：行的记录数据`<br/>`index：行的索引`<br/>`options：打印元素的选项值` | 返回==文本/html==                                                   |
 | renderFormatter       | `function` | 单元格的渲染函<br/>`value：字段的值`<br/>`row：行的记录数据`<br/>`index：行的索引`<br/>`options：打印元素的选项值`数   | 返回==文本/html==<br/><br> `当时SB了,现在发现和 formatter 功能一样` |
-| styler                | `function` | 单元格的样式函<br/>`value：字段的值`<br/>`row：行的记录数据`<br/>`index：行的索引`<br/>`options：打印元素的选项值`数   | 返回==jQuery.css()可处理对象== <br> 如: `{color:'red'}`             |
+| styler2               | `function` | 单元格的样式函<br/>`value：字段的值`<br/>`row：行的记录数据`<br/>`index：行的索引`<br/>`options：打印元素的选项值`数   | 返回==jQuery.css()可处理对象== <br> 如: `{color:'red'}`             |
+| stylerHeader          | `function` | 表格头样式函数<br/>`options：打印元素的选项值`数                                                                       | 返回==jQuery.css()可处理对象== <br> 如: `{color:'red'}`             |
 | tableTextType         | `string`   | 单元格字段类型<br/>`text、barcode、image、qrcode、sequence、`<br/>对应为:`文本、条形码、图片、二维码、序号`            |                                                                     |
 | tableColumnHeight     | `string`   | 特定单元格高度 ==二维码、条形码、图片才有效==                                                                          | 改变单元格高度,请设置 ==`options`的表体行高:tableBodyRowHeight==    |
 | tableSummary          | `string`   | 底部聚合函数 <br/>`count:计数` <br/>`sum：合计` <br/>`avg：平均值`<br/>`max：最大值`<br/>`min：最小值`                 |
