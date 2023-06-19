@@ -19,6 +19,7 @@ sv-print 它的配置和 API 还不够稳定。些许 Bug 可能还未发现或�
 | providers              | `array<object>`        | provider 数组<br>`自定义可拖拽元素`                    | `[]`                   |                                                                    |
 | providerMap            | `object/array<object>` | provider 构建对象/对象数组<br>`构建拖拽元素`           | `undefined`            | `{container:'容器选择器',value:'provider type(如:defaultModule)'}` |
 | clearProviderContainer | `boolean`              | 构建 provider 之前是否先==清空==                       | `true`                 |                                                                    |
+| showPanels             | `boolean`              | 是否显示多面板                                         | `true`                 |                                                                    |
 | plugins                | `array<object>`        | 插件数组                                               | `[]`                   |                                                                    |
 | template               | `json/object`          | 模板 json/模板参数                                     | `{}`                   | `模板参数`: new 模板的参数                                         |
 | printData              | `object`               | 预览打印数据                                           | `{name:"abcd"}`        |                                                                    |
