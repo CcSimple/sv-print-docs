@@ -56,6 +56,8 @@ copyright: false
 footer: LGPL Licensed | Copyright © 2022-present sv-print
 ---
 
+<img src="/assets/sv-print.png"/>
+
 ## 🛠 安装
 
 ::: code-tabs
@@ -122,10 +124,10 @@ import { Designer } from "sv-print";
 let template = {};
 
 function onDesigned(e) {
-  const { hiprint, printTemplate, designerUtils } = e.detail;
+  const { hiprint, designerUtils } = e.detail;
   console.log(hiprint);
-  console.log(printTemplate);
   console.log(designerUtils);
+  console.log(designerUtils.printTemplate);
 }
 </script>
 
@@ -218,11 +220,11 @@ designer.$on("onDesigned", (e) => {
 
 :::
 
-## ☕️ 请我喝杯咖啡
+## 👍🏻 支持该项目
 
-::: tip
+::: tip 感谢
 
-- 项目由个人开发，为爱发电，感谢各位的支持。
+- 如果该项目对你有所帮助, 可以扫下方的二维码, 支持一下! 你的支持是我最大的动力!
 
 :::
 
@@ -230,7 +232,5 @@ designer.$on("onDesigned", (e) => {
     <tr>
         <td><img src="/assets/zWechat.png" style="width:14rem"/></td>
         <td><img src="/assets/zAlipay.png" style="width:14rem"/></td>
-        <td>扫一扫右侧微信二维码<br/>寻求帮助 或进 微信群</td>
-        <td><img src="/assets/wechat.png" style="width:14rem"/></td>
     </tr>
 </table>

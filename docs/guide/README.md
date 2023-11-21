@@ -94,10 +94,10 @@ import { Designer } from "sv-print";
 let template = {};
 
 function onDesigned(e) {
-  const { hiprint, printTemplate, designerUtils } = e.detail;
+  const { hiprint, designerUtils } = e.detail;
   console.log(hiprint);
-  console.log(printTemplate);
   console.log(designerUtils);
+  console.log(designerUtils.printTemplate);
 }
 </script>
 

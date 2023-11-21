@@ -35,7 +35,6 @@ sv-print 它的配置和 API 还不够稳定。些许 Bug 可能还未发现或�
 | paperList              | `array<object>`        | 纸张列表                                               | `A1-A7 B1-B7`          | `{ type: "A1", width: 594, height: 841 }`                          |
 | theme                  | `string`               | 默认主题                                               | `light`                | ``                                                                 |
 | themeList              | `array<string>`        | 可选主题列表                                           | `["light","dark",...]` | [daisyui](https://daisyui.com/docs/themes/)                        |
-| pageStructureGridMode  | `boolean`              | `页面结构`网格模式                                     | `false`                |                                                                    |
 | miniMapOriginMode      | `boolean`              | `小地图`原始模式                                       | `false`                |                                                                    |
 | previewOptions         | `object`               | `预览参数`                                             | `{}`                   | `{showPdf:false}`<br/>隐藏导出 pdf 按钮                            |
 | onPreviewClick         | `function`             | `预览`点击函数 (e)=>{}                                 | `undefined`            |                                                                    |
@@ -47,7 +46,7 @@ sv-print 它的配置和 API 还不够稳定。些许 Bug 可能还未发现或�
 
 | 名称       | 说明                 | 回调参数                                                       |
 | ---------- | -------------------- | -------------------------------------------------------------- |
-| onDesigned | `设计器`渲染完成回调 | {<br/>`{hiprint`<br/>`printTemplate`<br/>`designerUtils`<br/>} |
+| onDesigned | `设计器`渲染完成回调 | {<br/>`{hiprint`<br/>`designerUtils`<br/>} |
 
 ### 默认值
 

@@ -4,12 +4,6 @@ category:
   - 插件
 ---
 
-::: warning 注意
-
-插件相关功能仅==sv-print==支持。
-
-:::
-
 ### 关于插件
 
 sv-print 插件是结合 hiprint 底层逻辑。使用 hook 实现的简单插件机。目前提供的 hook 有限。支持如下:

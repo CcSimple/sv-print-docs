@@ -18,15 +18,21 @@ sv-print 的诞生是因为我开发的[vue-plugin-hiprint](https://gitee.com/Cc
 
 简而言之 sv-print 就是为了方便在项目中集成 web 打印功能。
 
+### ❓ 为什么没开源
+
+起初本来是想开源的， 然而一次不经意发现开源的 vue-plugin-hiprint 越来越多的第三方版本。 于是 sv-print 没有开源的后续了~
+
+<img src="/assets/vue-plugin-hiprint.png"/>
+
 ### 关于 hiprint
 
 [hiprint](http://hiprint.io/) 是一个 web 打印的 js 组件，无需安装软件。支持 windows,macOS,linux 系统，支持移动端，PC 端浏览器，angular,vue,react 等 分页预览，打印，操作简单，运行快速。预览界面为 css+html 。支持数据分组，批量预览。生成 pdf,图片更方便 。[hiprint 官网(http://hiprint.io/)](http://hiprint.io/)
 
-### ☕️ 请我喝杯咖啡
+### 👍🏻 支持该项目
 
-::: tip
+::: tip 感谢
 
-- 项目由个人开发，为爱发电，感谢各位的支持。
+- 如果该项目对你有所帮助, 可以扫下方的二维码, 支持一下! 你的支持是我最大的动力!
 
 :::
 
@@ -34,7 +40,5 @@ sv-print 的诞生是因为我开发的[vue-plugin-hiprint](https://gitee.com/Cc
     <tr>
         <td><img src="/assets/zWechat.png" style="width:14rem"/></td>
         <td><img src="/assets/zAlipay.png" style="width:14rem"/></td>
-        <td>扫一扫右侧微信二维码<br/>寻求帮助 或进 微信群</td>
-        <td><img src="/assets/wechat.png" style="width:14rem"/></td>
     </tr>
 </table>

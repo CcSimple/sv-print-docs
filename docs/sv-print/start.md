@@ -69,11 +69,12 @@ export default {
   },
   methods: {
     onDesigned(e) {
-      // 这里会 回调 3 个 关键对象
+      // 这里会 回调 2 个 关键对象
       console.log(e);
       console.log(e.hiprint); // hiprint 模块
-      console.log(e.printTemplate); // 模板 对象
+      // 更多 API 可查看 log
       console.log(e.designerUtils); // 设计器 对象
+      console.log(e.designerUtils.printTemplate); // 模板 对象
     },
   },
 };
