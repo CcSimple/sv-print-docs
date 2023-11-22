@@ -13,10 +13,11 @@ category:
 ### 示例
 
 ```js
+import { hiprint } from "sv-print";
 // 以 defaultElementTypeProvider 为例
-  // 这里可以理解成 返回了一个 带有 addElementTypes 的 可以传入 options 去实例化的对象。
-  // 如: test.js 这里的 context, 是内部去传的。
-  // let test = new test(options), test.addElementTypes(context);
+// 这里可以理解成 返回了一个 带有 addElementTypes 的 可以传入 options 去实例化的对象。
+// 如: test.js 这里的 context, 是内部去传的。
+// let test = new test(options), test.addElementTypes(context);
 export default function (options) {
   var addElementTypes = function (context) {
     // 移除 旧的 defaultModule "元素"类型, 以避免重复

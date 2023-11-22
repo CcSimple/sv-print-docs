@@ -113,6 +113,11 @@ export const zh = sidebar({
           prefix: "sv-print/",
           link: "sv-print/options",
         },
+        {
+          text: "自定义默认拖拽元素",
+          prefix: "sv-print/",
+          link: "sv-print/provider",
+        },
       ],
     },
     {
