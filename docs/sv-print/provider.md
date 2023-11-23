@@ -70,6 +70,24 @@ export default {
 </script>
 ```
 
+### 查看 已初始化的 provider
+
+不知道初始化是否正常? 
+
+打开==浏览器控制台==，输入 hiprint 可查看 hiprint.ElementTypes 对象:
+
+```js
+hiprint.ElementTypes
+```
+
+<img src="/assets/hiprint.ElementTypes.png"/>
+
+其中 ==allElementTypes== 是已初始化的所有的元素。
+
+==defaultModule== 则是根据你创建的 provider 的 key。
+
+你可以==详细查看他们==,以检查是否==新拖拽出来的元素是否正常==。 以及关键的 ==tid== 。
+
 ### 使用 provider
 
 本来不想啰嗦的，又怕你们不清楚，说找不到怎么用，不知道原理。还是简单说一下吧。
