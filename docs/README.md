@@ -111,6 +111,16 @@ npm i @sv-print/vue3
 
 :::
 
+> ==在你项目的 index.html 入口 添加 print-lock.css 打印样式【名称 print-lock.css】==
+
+> ==注意: media="print"==
+
+
+```html
+<!-- 可以调整成 相对链接/自有链接, 【重要】名称需要一致 【print-lock.css】-->
+<link rel="stylesheet" type="text/css" media="print" href="/print-lock.css">
+```
+
 ## 🚀 使用
 
 ::: code-tabs
