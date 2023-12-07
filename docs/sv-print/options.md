@@ -37,16 +37,16 @@ sv-print 它的配置和 API 还不够稳定。些许 Bug 可能还未发现或�
 | themeList              | `array<string>`        | 可选主题列表                                           | `["light","dark",...]` | [daisyui](https://daisyui.com/docs/themes/)                        |
 | miniMapOriginMode      | `boolean`              | `小地图`原始模式                                       | `false`                |                                                                    |
 | previewOptions         | `object`               | `预览参数`                                             | `{}`                   | `{showPdf:false}`<br/>隐藏导出 pdf 按钮                            |
-| onPreviewClick         | `function`             | `预览`点击函数 (e)=>{}                                 | `undefined`            |                                                                    |
+| onPreviewClick         | `function`             | `预览`点击函数 (e)=>{<br/>return true; `阻止继续运行`}     | `undefined`            |                                                                    |
 | onImageChooseClick     | `function`             | `图片选择`点击函数 (target)=>{}                        | `undefined`            |                                                                    |
 | onPanelAddClick        | `function`             | `多面板添加`点击函数 (panel, createPanel)=>{}          | `undefined`            |                                                                    |
 | onFunctionClick        | `function`             | `格式化函数`点击函数 (option, printElement, event)=>{} | `undefined`            |                                                                    |
 
 ### 回调
 
-| 名称       | 说明                 | 回调参数                                                       |
-| ---------- | -------------------- | -------------------------------------------------------------- |
-| onDesigned | `设计器`渲染完成回调 | {<br/>`{hiprint`<br/>`designerUtils`<br/>} |
+| 名称       | 说明                 | 回调参数                                   |
+| ---------- | -------------------- | ------------------------------------------ |
+| onDesigned | `设计器`渲染完成回调 | {<br/>`hiprint`<br/>`designerUtils`<br/>} |
 
 ### 默认值
 
