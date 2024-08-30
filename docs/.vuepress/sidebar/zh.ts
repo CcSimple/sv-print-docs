@@ -28,7 +28,7 @@ export const zh = sidebar({
       collapsible: true,
       children: [
         {
-          text: "开始",
+          text: "js插件使用",
           prefix: "config/",
           link: "config/start",
         },
@@ -104,7 +104,7 @@ export const zh = sidebar({
       collapsible: true,
       children: [
         {
-          text: "开始",
+          text: "组件使用",
           prefix: "sv-print/",
           link: "sv-print/start",
         },

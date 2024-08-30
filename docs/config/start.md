@@ -1,16 +1,8 @@
 ---
-title: 开始
+title: hiprint插件使用
 category:
   - 模板&元素
 ---
-
-@include(../guide/intro.md{21-24})
-
-::: warning 温馨提示
-
-hiprint 底层是基于 [jQuery](https://jquery.com/) 实现的。
-
-:::
 
 ## 安装
 
