@@ -30,6 +30,9 @@ sv-print 目前仍处于测试阶段。你可以引入到现有项目，但是�
 | [@sv-print/vue3](https://github.com/CcSimple/sv-print/tree/main/packages/vue3)        | [![npm](https://img.shields.io/npm/v/@sv-print/vue3.svg?label=)](https://npm.im/@bytemd/vue3)     | Vue 3 组件             |
 | [@sv-print/hiprint](https://github.com/CcSimple/sv-print/tree/main/packages/hiprint)  | [![npm](https://img.shields.io/npm/v/@sv-print/hiprint.svg?label=)](https://npm.im/@bytemd/vue3)  | hiprint core (js 库)   |
 
+
+> ==选择您项目环境版本安装即可==
+
 ::: code-tabs
 
 @tab pnpm
@@ -73,6 +76,24 @@ npm i @sv-print/vue3
 
 :::
 
+### 引入组件样式
+
+以 vue3 为例:
+
+在==main.ts/main.js== 文件中引入组件样式
+
+```ts
+import { createApp } from "vue";
+import App from "./App.vue";
+// 引入组件样式
+import "sv-print/dist/style.css";
+
+createApp(App).mount("#app");
+
+```
+
+### 引入打印样式
+
 ::: danger 重要提醒
 
 需要复制【==node_modules/@sv-print/hiprint/dist/print-lock.css==】到开发资源目录。<br/>
@@ -91,7 +112,7 @@ npm i @sv-print/vue3
 <link rel="stylesheet" type="text/css" media="print" href="/print-lock.css">
 ```
 
-### 使用
+### 引入组件
 
 ::: code-tabs
 
@@ -99,7 +120,6 @@ npm i @sv-print/vue3
 
 ```vue
 <script>
-import "sv-print/dist/style.css"; // 一般在入口文件(index/main)添加
 import { Designer } from "sv-print";
 let template = {};
 
@@ -124,7 +144,6 @@ function onDesigned(e) {
 </template>
 
 <script>
-import "sv-print/dist/style.css"; // 一般在入口文件(index/main)添加
 import { Designer } from "@sv-print/vue";
 
 export default {
@@ -150,7 +169,6 @@ export default {
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import "sv-print/dist/style.css"; // 一般在入口文件(index/main)添加
 import { Designer } from "@sv-print/vue3";
 let template = ref({});
 const onDesigned = (e) => {
@@ -163,7 +181,6 @@ const onDesigned = (e) => {
 @tab React
 
 ```js
-import "sv-print/dist/style.css"; // 一般在入口文件(index/main)添加
 import { Designer } from "@sv-print/react";
 
 const App = () => {
@@ -183,7 +200,6 @@ const App = () => {
 @tab Vanilla JS
 
 ```js
-import "sv-print/dist/style.css";
 import { Designer } from "sv-print";
 
 const designer = new Designer({
