@@ -4,39 +4,39 @@ import{_ as p,W as e,X as o,$ as n,a0 as s,Y as t,a1 as c,D as l}from"./framewor
 <span class="token comment">// 如: test.js 这里的 context, 是内部去传的。</span>
 <span class="token comment">// let test = new test(options), test.addElementTypes(context);</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">var</span> <span class="token function-variable function">addElementTypes</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 移除 旧的 defaultModule &quot;元素&quot;类型, 以避免重复</span>
-    context<span class="token punctuation">.</span><span class="token function">removePrintElementTypes</span><span class="token punctuation">(</span><span class="token string">&quot;defaultModule&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token comment">// 添加 defaultModule &quot;元素&quot;类型</span>
-    context<span class="token punctuation">.</span><span class="token function">addPrintElementTypes</span><span class="token punctuation">(</span><span class="token string">&quot;defaultModule&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
-      <span class="token comment">// PrintElementTypeGroup 分组</span>
-      <span class="token comment">// 如果使用 hiprint.PrintElementTypeManager.build(&#39;.hiprintEpContainer2&#39;, &quot;defaultModule&quot;) 这里会渲染这个 &quot;常规&quot; 分组名称</span>
-      <span class="token keyword">new</span> <span class="token class-name">hiprint<span class="token punctuation">.</span>PrintElementTypeGroup</span><span class="token punctuation">(</span><span class="token string">&quot;常规&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-          <span class="token literal-property property">tid</span><span class="token operator">:</span> <span class="token string">&quot;defaultModule.text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 唯一 key</span>
-          <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 元素类型</span>
-          <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">&quot;文本&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 这里和 options 中的 title 一样。&quot;拖拽时就显示&quot; 优先级高于 options 的, &quot;无法彻底删除&quot;</span>
-          <span class="token comment">// field: &#39;text&#39; // 这里和 options 中的 field 一样。优先级高于 options 的, &quot;无法彻底删除&quot;</span>
-          <span class="token comment">// data: &quot;1111&quot;, // 这里和 options 中的 testData 一样。会有冲突, &quot;无法彻底删除&quot;</span>
-          <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">&quot;文本2&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 标题, &quot;拖进设计器才会显示&quot;</span>
-            <span class="token literal-property property">field</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字段名称</span>
-            <span class="token literal-property property">testData</span><span class="token operator">:</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 测试数据</span>
-          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token keyword">var</span> <span class="token function-variable function">addElementTypes</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 移除 旧的 defaultModule &quot;元素&quot;类型, 以避免重复</span>
+  context<span class="token punctuation">.</span><span class="token function">removePrintElementTypes</span><span class="token punctuation">(</span><span class="token string">&quot;defaultModule&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 添加 defaultModule &quot;元素&quot;类型</span>
+  context<span class="token punctuation">.</span><span class="token function">addPrintElementTypes</span><span class="token punctuation">(</span><span class="token string">&quot;defaultModule&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+    <span class="token comment">// PrintElementTypeGroup 分组</span>
+    <span class="token comment">// 如果使用 hiprint.PrintElementTypeManager.build(&#39;.hiprintEpContainer2&#39;, &quot;defaultModule&quot;) 这里会渲染这个 &quot;常规&quot; 分组名称</span>
+    <span class="token keyword">new</span> <span class="token class-name">hiprint<span class="token punctuation">.</span>PrintElementTypeGroup</span><span class="token punctuation">(</span><span class="token string">&quot;常规&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">tid</span><span class="token operator">:</span> <span class="token string">&quot;defaultModule.text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 唯一 key</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 元素类型</span>
+        <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">&quot;文本&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 这里和 options 中的 title 一样。&quot;拖拽时就显示&quot; 优先级高于 options 的, &quot;无法彻底删除&quot;</span>
+        <span class="token comment">// field: &#39;text&#39; // 这里和 options 中的 field 一样。优先级高于 options 的, &quot;无法彻底删除&quot;</span>
+        <span class="token comment">// data: &quot;1111&quot;, // 这里和 options 中的 testData 一样。会有冲突, &quot;无法彻底删除&quot;</span>
+        <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">&quot;文本2&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 标题, &quot;拖进设计器才会显示&quot;</span>
+          <span class="token literal-property property">field</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字段名称</span>
+          <span class="token literal-property property">testData</span><span class="token operator">:</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 测试数据</span>
         <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token keyword">new</span> <span class="token class-name">hiprint<span class="token punctuation">.</span>PrintElementTypeGroup</span><span class="token punctuation">(</span><span class="token string">&quot;辅助&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-          <span class="token literal-property property">tid</span><span class="token operator">:</span> <span class="token string">&quot;defaultModule.hline&quot;</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">&quot;横线&quot;</span><span class="token punctuation">,</span>
-          <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;hline&quot;</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token punctuation">{</span>
-    <span class="token literal-property property">addElementTypes</span><span class="token operator">:</span> addElementTypes<span class="token punctuation">,</span>
-  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">hiprint<span class="token punctuation">.</span>PrintElementTypeGroup</span><span class="token punctuation">(</span><span class="token string">&quot;辅助&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">tid</span><span class="token operator">:</span> <span class="token string">&quot;defaultModule.hline&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">&quot;横线&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&quot;hline&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">addElementTypes</span><span class="token operator">:</span> addElementTypes<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="初始化-provider" tabindex="-1"><a class="header-anchor" href="#初始化-provider" aria-hidden="true">#</a> 初始化 provider</h3><blockquote><p>1 全局初始化</p></blockquote><p>在 main.js 或者 其他非 UI 页面的 js 中初始化 provider: 做到全局初始化，所有页面都可以使用。</p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> hiprint <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;sv-print&quot;</span><span class="token punctuation">;</span>
 <span class="token comment">// 自己本地建的 provider.js</span>
