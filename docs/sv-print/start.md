@@ -22,6 +22,25 @@ category:
 npm i @sv-print/vue
 ```
 
+### 引入组件样式
+
+以 vue 为例:
+
+在==main.js== 文件中引入组件样式
+
+```js
+import Vue from "vue";
+import App from "./App.vue";
+// 引入组件样式
+import "sv-print/dist/style.css";
+
+Vue.config.productionTip = false;
+
+new Vue({
+  render: (h) => h(App),
+}).$mount("#app");
+```
+
 ### 引入打印样式
 
 ::: danger 重要提醒
@@ -40,13 +59,6 @@ npm i @sv-print/vue
 ```html
 <!-- 可以调整成 相对链接/自有链接, 【重要】名称需要一致 【print-lock.css】-->
 <link rel="stylesheet" type="text/css" media="print" href="/print-lock.css">
-```
-
-### 引入组件样式
-
-```js
-// 一般在入口文件(index/main)添加
-import "sv-print/dist/style.css";
 ```
 
 ### 引入组件
@@ -83,8 +95,7 @@ export default {
       console.log(e);
       console.log(e.hiprint); // hiprint 模块
       // 更多 API 可查看 log
-      console.log(e.designerUtils); // 设计器 对象
-      console.log(e.designerUtils.printTemplate); // 模板 对象
+      console.log(e.designerUtils);
     },
   },
 };
