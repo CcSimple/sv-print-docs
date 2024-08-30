@@ -14,7 +14,7 @@ actions:
     type: primary
 
   - text: 在线案例 🎾
-    link: https://ccsimple.gitee.io/sv-print-demo/
+    link: https://ccsimple.github.io/sv-print-demo/
 
 features:
   - title: 多框架UI 组件
