@@ -8,37 +8,15 @@ category:
 
 sv-print 是一个使用 Svelte 构建的打印设计器组件（[基于 hiprint](http://hiprint.io)）。它也可以用于其他 UI 库/框架，如 React、Vue 和 Angular。
 
-<!-- ::: warning 注意
+因为我开源的[vue-plugin-hiprint](https://gitee.com/CcSimple/vue-plugin-hiprint)插件，当时仅仅是为了方便我自己在 vue 项目中引入使用，而且最开始不熟悉，所以它只是个 js 插件库。随着后续使用者的增多，发现大家有类似的需求，于是我就想着把它封装成组件，方便大家使用。于是就有了这个组件库。
 
-sv-print 目前仍处于测试阶段。你可以引入到现有项目，但是它的配置和 API 还不够稳定。些许 Bug 可能还未发现或未处理。
+sv-print 就是为了方便在项目中快速集成 web 打印功能的一个组件。
 
-::: -->
+### 特性
 
-sv-print 的诞生是因为我开发的[vue-plugin-hiprint](https://gitee.com/CcSimple/vue-plugin-hiprint)插件，由于当时插件仅仅是为了方便我自己在 vue 项目中引入使用，所以只有 Vue 框架的一些 UI 框架的 demo 使用。但是 [hiprint](http://hiprint.io) 底层是 [jQuery](https://jquery.com/) 开发的，所以理论上是支持其他框架的。为了能在其他框架下方便使用，比 vue-plugin-hiprint 更方便的引入到任何项目中。而后了解到有 Svelte 这个苗条的，没有虚拟 DOM 的框架，用它可以打包到其他如 Vue、React 等等框架中的开发框架的存在。 sv-print 代码可能很多地方都不太合理，因为我也是初学者。所以需要大家的共同参与以完善这个还算凑合的打印设计器。
-
-简而言之 sv-print 就是为了方便在项目中集成 web 打印功能。
-
-### ❓ 为什么没开源
-
-起初本来是想开源的， 然而一次不经意发现开源的 vue-plugin-hiprint 越来越多的第三方版本。 于是 sv-print 没有开源的后续了~
-
-<img src="/assets/vue-plugin-hiprint.png"/>
-
-### 关于 hiprint
-
-[hiprint](http://hiprint.io/) 是一个 web 打印的 js 组件，无需安装软件。支持 windows,macOS,linux 系统，支持移动端，PC 端浏览器，angular,vue,react 等 分页预览，打印，操作简单，运行快速。预览界面为 css+html 。支持数据分组，批量预览。生成 pdf,图片更方便 。[hiprint 官网(http://hiprint.io/)](http://hiprint.io/)
-
-### 👍🏻 支持该项目
-
-::: tip 感谢
-
-- 如果该项目对你有所帮助, 可以扫下方的二维码, 支持一下! 你的支持是我最大的动力!
-
-:::
-
-<table>
-    <tr>
-        <td><img src="/assets/zWechat.png" style="width:14rem"/></td>
-        <td><img src="/assets/zAlipay.png" style="width:14rem"/></td>
-    </tr>
-</table>
+- 🚀 支持 vue、react、angular 等框架的组件引入
+- 🚀 支持 常规编辑: 复制、粘贴、删除、缩放、拖拽、旋转、对齐、吸附、锁定、解锁、撤销、重做、全选等
+- ⭐️ 支持 插件机制 可扩展更多的打印元素（ECharts、Fabric等等）
+- 🌈 支持拖拽设计、预览、打印、导出PDF、导出图片
+- ✨  支持自定义模板、导入/导出模板
+- 🌈 支持数据源绑定、数据格式化、样式格式化
